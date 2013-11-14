@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 	<head>
 		<title>What Should I Play?</title>
 		<link rel="stylesheet" type="text/css" href="/css/pure-min.css">
 		<link rel="stylesheet" type="text/css" href="/css/style.css">
 	</head>
-	<body>
+	<body ng-controller="GameCtrl">
 		<div class="banner">
+			<div class="banner-bg"></div>
 	    <h1 class="banner-head">
 	        What Should I Play?
 	    </h1>
 		</div>
-
-
+		<div class="l-content">
+			<div class="pure-g-r">
+				<div class="pure-u-1">
+					<form class="pure-form">
+						<label for="steamName">Steam Community Name:</label>
+						<input id="steamName" name="steamName" type="text" placeholder="Steam Community Name">
+						<button type="submit" class="pure-button pure-button-primary">Get Games</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="/lib/angular.min.js"></script>
+		<script type="text/javascript" src="/js/app.js"></script>
 	</body>
 </html>
