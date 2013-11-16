@@ -21,12 +21,16 @@ post '/games' do
 
 		gamesHash = id.games
 
-		games = {:count => gamesHash.count}
+		games = Array.new
+
+		res = {:count => gamesHash.count}
 
 		gamesHash.each do |id, game|
-			games[game.app_id] = {:name => game.name, :image_url => game.logo_url}
+			games.push({:app_id => game.app_id, :name => game.name, :image_url => game.logo_url})
 		end
 
-		games.to_json
+		res[:games] = games
+
+		res.to_json
 	end
 end
