@@ -1,7 +1,9 @@
-function GameCtrl($scope, $http) {
-	$scope.games = [];
+var whatShouldIPlayApp = angular.module('whatShouldIPlayApp', ['angularLocalStorage']);
 
-	$scope.gameCount = $scope.games.length
+whatShouldIPlayApp.controller('GameCtrl', function($scope, $http, storage) {
+	storage.bind($scope, 'games');
+	storage.bind($scope, 'gameCount');
+	storage.bind($scope, 'steamName');
 
 	$scope.getGames = function() {
 		$http({
@@ -23,4 +25,4 @@ function GameCtrl($scope, $http) {
 			alert(data);
 		});
 	};
-}
+});
