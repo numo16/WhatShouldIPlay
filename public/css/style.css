@@ -102,3 +102,15 @@ p {
 .pure-button-secondary {
     background: rgb(66, 184, 221); /* this is a light blue */
 }
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+  margin-top: 45px;
+  padding: 5px 0 16px;
+  border-top: 1px solid #e5e5e5;
+}
+.footer p {
+  margin-bottom: 0;
+  color: #555;
+}
