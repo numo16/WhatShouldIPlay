@@ -32,7 +32,7 @@ p {
     background-size: cover;
     height: 250px;
     width: 100%;
-    margin-bottom: 3em;
+    margin-bottom: 10px;
     display: table;
 }
 
@@ -62,6 +62,10 @@ p {
 	margin-top: 8px;
 }
 
+.user-form {
+	margin-bottom: 15px;
+}
+
 .content-grid {
 	overflow-y: auto;
 	margin-top: 20px;
@@ -69,5 +73,16 @@ p {
 }
 
 .game {
+	text-align: center;
+}
+
+#gameCount {
+	text-align: center;
+}
+
+#playingNow {
+	border: solid #999 1px;
+	border-radius: 10px;
+	padding: 10px;
 	text-align: center;
 }
