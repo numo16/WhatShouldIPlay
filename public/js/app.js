@@ -64,4 +64,8 @@ whatShouldIPlayApp.controller('GameCtrl', function($scope, $http, storage) {
 
 		$scope.getNextToPlay();
 	}
+
+	if($scope.steamName != "") {
+		$scope.getGames();
+	}
 });

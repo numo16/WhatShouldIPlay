@@ -33,11 +33,11 @@
 			<div class="pure-g-r">
 				<div class="pure-u-1">
 					<div id="playingNow" ng-show="playingNow.name != ''" ng-cloak>
-						<h2>Playing Now!</h2>
+						<h2>Play It Now!</h2>
 						<img src="{{playingNow.image_url}}">
 						<h4 ng-cloak>{{playingNow.name}}</h4>
-						<button class="pure-button" ng-click="playedIt()">Played It!</button>
-						<button class="pure-button" ng-click="getNextToPlay()">Skip for now...</button>
+						<button class="pure-button pure-button-secondary" ng-click="playedIt()">Played It!</button>
+						<button class="pure-button pure-button-warning" ng-click="getNextToPlay()">Skip for now...</button>
 					</div>
 				</div>
 			</div>
