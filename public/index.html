@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="whatShouldIPlayApp">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>What Should I Play?</title>
 		<link rel="stylesheet" type="text/css" href="/css/pure-min.css">
 		<link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -16,7 +17,7 @@
 			<div class="pure-g-r user-form">
 				<div class="pure-u-1">
 					<form class="pure-form pure-form-stacked" ng-submit="getGames()">
-						<label for="steamName">Steam Community Name</label>
+						<label for="steamName">Steam Community Name (steam community profile must be public to use)</label>
 						<input id="steamName" class="pure-input-1" name="steamName" type="text" placeholder="Steam Community Name" ng-model="steamName">
 
 						<button type="submit" class="pure-button pure-input-1 pure-button-primary">Get Games</button>
