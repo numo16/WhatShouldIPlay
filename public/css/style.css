@@ -19,6 +19,7 @@ p {
 .l-content {
     margin: 0 auto;
     max-width: 980px;
+    padding:1em;
 }
 
 .l-box {
